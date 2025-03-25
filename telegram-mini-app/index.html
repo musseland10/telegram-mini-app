@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Channel Promoter & Photo Share</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📢 Channel Promoter</h1>
+            <p>Help grow our Telegram community!</p>
+        </header>
+        
+        <section class="channel-promo">
+            <h2>Join Our Channel</h2>
+            <div class="channel-card">
+                <img src="assets/channel-icon.png" alt="Channel Icon" class="channel-icon">
+                <h3>Amazing Channel</h3>
+                <p>Daily updates & exclusive content</p>
+                <a href="https://t.me/yourchannel" class="join-btn" target="_blank">Join Now</a>
+            </div>
+        </section>
+        
+        <section class="photo-share">
+            <h2>Share Your Photo</h2>
+            <div class="upload-area" id="uploadArea">
+                <img src="assets/upload-icon.png" alt="Upload Icon" class="upload-icon">
+                <p>Click to select a photo</p>
+                <input type="file" id="fileInput" accept="image/*" style="display: none;">
+            </div>
+            <div class="preview-area" id="previewArea" style="display: none;">
+                <img id="imagePreview" src="" alt="Preview">
+                <button id="sendBtn">Send to Channel</button>
+            </div>
+        </section>
+        
+        <footer>
+            <p>Thank you for supporting our community!</p>
+        </footer>
+    </div>
+</body>
+</html>
